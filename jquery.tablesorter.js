@@ -464,7 +464,7 @@
 			};
 			
 			function sortText(a,b) {
-				return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+				return !a.length ? 1 : !b.length ? -1 : ((a < b) ? -1 : ((a > b) ? 1 : 0));
 			};
 			
 			function sortTextDesc(a,b) {
